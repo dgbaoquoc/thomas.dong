@@ -1,0 +1,30 @@
+---
+import Link from "@/components/link";
+
+const year = new Date().getFullYear();
+---
+<div class="prose">
+  <hr />
+
+  <footer class="flex justify-between">
+    <span>Thomas Dong @{year}</span>
+
+    <div class="flex gap-4">
+      <Link href="/rss.xml">
+        <div class="i-mdi:rss" title="RSS" />
+      </Link>
+
+      <Link href="/sitemap-index.xml">
+        <div class="i-mdi:sitemap" title="Sitemap" />
+      </Link>
+
+      <Link href="mailto:dgbaoquoc@gmail.com">
+        <div class="i-mdi:mail-outline" title="Email" />
+      </Link>
+
+      <Link href="https://github.com/dgbaoquoc">
+        <div class="i-mdi:github" title="GitHub" />
+      </Link>
+    </div>
+  </footer>
+</div>

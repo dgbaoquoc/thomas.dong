@@ -1,0 +1,36 @@
+---
+import Link from "@/components/link";
+import MainLayout from "@/layouts/main-layout.astro";
+
+const title = "thomas • home";
+---
+
+<MainLayout {title} description="">
+  <h1 slot="header-content" class="text-neutral-600 dark:text-neutral-500">
+    thomas
+  </h1>
+
+  <main class="prose">
+    <p>
+      Hi there, I'm <strong>Thomas</strong>.
+    </p>
+
+    <!-- <div class="mt-12" />
+    <h2>Projects</h2>
+
+    <div class="grid grid-cols-2 gap-4 md:grid-cols-3">
+      {projects.map(project => <Project {project} />)}
+    </div> -->
+
+    <div class="mt-12"></div>
+    <h2>Blog</h2>
+
+    <div class="flex flex-col gap-5">
+      <!-- {posts.map(post => <PostRow {post} />)} -->
+
+      <span>
+        <Link href="/blog">All posts →</Link>
+      </span>
+    </div>
+  </main>
+</MainLayout>
